@@ -1,8 +1,7 @@
-```mermaid
 flowchart TD
     A[Ticket de soporte / Necesidad del cliente] --> B[Agente de Redacción de Tareas]
 
-    B --> C[Genera tarea técnica estandarizada<br/>(Title, Issue, Solution, Use Cases, Refinements)]
+    B --> C[Genera tarea técnica estandarizada\nTitle · Issue · Solution · Use Cases · Refinements]
 
     C --> D{Revisión PM / Cliente / Dev}
 
