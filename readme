@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
     A[Ticket de soporte / Necesidad del cliente] --> B[Agente de Redacción de Tareas]
 
