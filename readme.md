@@ -1,42 +1,16 @@
-flowchart TD
-    A[Ticket de soporte / Necesidad del cliente] --> B[Agente de Redacción de Tareas]
+# Task lifecycle with agents
 
-    B --> C[Genera tarea técnica estandarizada\nTitle · Issue · Solution · Use Cases · Refinements]
+This repository documents the end-to-end lifecycle of a development task,
+from initial support request to final PR validation and documentation.
 
-    C --> D{Revisión PM / Cliente / Dev}
+## Task flows
 
-    D -->|No aprobado| E[Feedback / Ajustes]
-    E --> B
+- [Pre-development flow – Task creation & alignment](docs/flows/task-flow-pre-dev.md)
+- [Post-development flow – Validation & documentation](docs/flows/task-flow-post-dev.md)
 
-    D -->|Aprobado| F[Estimación de horas]
-    F --> G[Inicio del desarrollo]
+## Why this matters
 
-    G --> H[Implementación]
-    H --> I[Pull Request]
-
-    I --> J[Agente de Revisión Post-Dev]
-
-    J --> K[Revisión de Tarea en Jira]
-    J --> L[Revisión del PR]
-    J --> M[Análisis funcional vs Use Cases]
-
-    K --> N{¿Cumple lo requerido?}
-    L --> N
-    M --> N
-
-    N -->|No| O[Feedback automático al Dev]
-    O --> G
-
-    N -->|Sí| P[Chequeo de Documentación]
-
-    P --> Q{¿Existe documentación?}
-
-    Q -->|Sí, exacta| R[Linkea documentación existente]
-    Q -->|Similar| S[Linkea doc similar + advertencia]
-    Q -->|No existe| T[Propone nueva documentación]
-
-    T --> U[Dev revisa y confirma propuesta de documentación]
-
-    R --> V[PR listo para merge]
-    S --> V
-    U --> V
+- Consistent task definitions
+- Clear alignment before development
+- Automated functional validation
+- Living documentation
