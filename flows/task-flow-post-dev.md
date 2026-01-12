@@ -1,11 +1,3 @@
-
----
-
-## 3️⃣ Post-Dev Flow (segundo agente)
-
-### 📄 `docs/flows/task-flow-post-dev.md`
-
-```markdown
 # Post-development flow
 ## Task validation and documentation (Agent-driven)
 
