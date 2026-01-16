@@ -5,8 +5,8 @@ from initial support request to final PR validation and documentation.
 
 ## Task flows
 
-- [Pre-development flow – Task creation & alignment](docs/flows/task-flow-pre-dev.md)
-- [Post-development flow – Validation & documentation](docs/flows/task-flow-post-dev.md)
+- [Pre-development flow – Task creation & alignment](flows/task-flow-pre-dev.md)
+- [Post-development flow – Validation & documentation](flows/task-flow-post-dev.md)
 
 ## Why this matters
 
